@@ -1,8 +1,7 @@
 FROM nvidia/cuda:latest
 
 RUN apt-get update
-RUN apt-get install -y --no-install-recommends build-essential wget unzip
-RUN apt-get install -y --no-install-recommends cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+RUN apt-get install -y --no-install-recommends build-essential wget unzip cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
 
 RUN \
     mkdir build \
